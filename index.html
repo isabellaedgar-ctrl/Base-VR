@@ -13,11 +13,19 @@
     <a-scene>
         <a-entity environment="preset: forest; skyType: gradient; horizonColor: #E5E7D6; dressingAmount: 50; skyColor: #FFA69E; dressingColor: #7A5C58; dressing:mushrooms; dressingScale: 1; groundColor: #7A5C58; groundColor2: #FFA69E"></a-entity>
         <!-- Museum floor starts here -->
-         <a-cylinder id="floor" position="0 0 0" radius="7.5" color="#7A5C58" height="0.1"></a-cylinder>
-         <a-box id="box1" position="0 1.473 4.907" rotation="0 0 0" scale="10 3 0.2" color="red"></a-box>
-         <a-box id="box1" position="0 1.473 -4.907" rotation="0 0 0" scale="10 3 0.2" color="red"></a-box>
-         <a-box id="box1" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="red"></a-box>
-         <a-box id="box1" position="0 0 0" rotation="0 0 0" scale="10 3 0.2" color="red"></a-box>
+         <a-cylinder id="floor" position="0 0 0" radius="7.5" color="#7A5C58" height="0.1"></a-cynlinder>
+         <!-- Museum walls starts here -->
+            <a-box id="box1" position="0 1.473 4.907" rotation="0 0 0" scale="10 3 0.2" color="#7A5C58"></a-box>
+         <a-box id="box1" position="0 1.473 -4.907" rotation="0 0 0" scale="10 3 0.2" color="#7A5C58"></a-box>
+         <a-box id="box1" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="#7A5C58"></a-box>
+         <a-box id="box1" position="-5.049 1.454 -0.008"rotation="0 -90 0" scale="10 3 0.2" color="#7A5C58"></a-box>
+          <!-- Museum roof starts here -->
+         <a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="#7A5C58"></a-cylinder>
+         <a-cylinder id="triangle_back" segments-radial="3" position="0 3.874 -4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="#7A5C58"></a-cylinder>
+         <a-box id="roof_right" position="2.580 4.328 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" color="#7A5C58"></a-box>
+         <a-box id="roof_right" position="-2.580 4.328 -0.017" rotation="28.433 -90 0" scale="10.931 0.20 6.130" color="#7A5C58"></a-box>
+          <!-- Museum pictures starts here -->
+         <a-plane id="art1" src="images/bookheart.jpg" scale="2 2 0.05" rotation="0 0 0" position="-0.162 1.934 -4.792"></a-plane>
     </a-scene>
 </body>
 </html>
