@@ -12,6 +12,17 @@
 </head>
 <body>
     <a-scene>
+      <a-assets>
+         <video id="videoclip" loop="true" src="tvAssets/Dancey (3).mp4" crossorigin="anonymous" preload="auto"></video>
+
+  <!-- Buttons and Background -->
+
+  <img id="play" src="tvAssets/btnPlay.png" preload="auto">
+
+  <img id="pause" src="tvAssets/btnPause.png" preload="auto">
+
+  <img id="tv_background" src="tvAssets/tv_background.jpg" preload="auto">
+      </a-assets>
         <a-entity environment="preset: forest; skyType: gradient; horizonColor: #E5E7D6; dressingAmount: 100; skyColor: #FFA69E; dressingColor: #7A5C58; dressing:mushrooms; dressingScale: 1; groundColor: #7A5C58; groundColor2: #FFA69E"></a-entity>
         <!-- Museum floor starts here -->
          <a-cylinder id="floor" position="0 0 0" radius="7.5" color="#7A5C58" height="0.1"></a-cynlinder>
@@ -54,17 +65,6 @@
 
 <a-entity cursor="rayOrigin: mouse"></a-entity>
         </a-scene>
-          <!-- Video -->
-
-  <video id="videoclip" loop="true" src="tvAssets/Dancey (3).mp4" crossorigin="anonymous" preload="auto"></video>
-
-  <!-- Buttons and Background -->
-
-  <img id="play" src="tvAssets/btnPlay.png" preload="auto">
-
-  <img id="pause" src="tvAssets/btnPause.png" preload="auto">
-
-  <img id="tv_background" src="tvAssets/tv_background.jpg" preload="auto">
-        <a-assets></a-assets>
+      
 </body>
 </html>
